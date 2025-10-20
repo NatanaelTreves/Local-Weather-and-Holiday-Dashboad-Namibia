@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Local Weather and Holiday Dashboard - Live time, weather updates, Namibian holidays and weekend countdown">
+  <title>Local Weather & Holiday Dashboard</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+  <main class="container">
+    <header class="header">
+      <img src="websiteIcon.png" alt="Website Icon" class="site-icon">
+      <h1 class="logo">Local Weather & Holiday Dashboard</h1>
+      <p class="subtitle">Live time, weather, holidays & weekend countdown</p>
+      <label class="toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span>Dark Mode</span>
+      </label>
+    </header>
+
+    <section class="grid">
+      <article class="card clock-card">
+        <h2>Local Time</h2>
+        <div id="time" class="big-time" aria-live="polite">--:--:--</div>
+        <div id="date" class="small-text">Loading date...</div>
+      </article>
+
+      <article class="card weather-card">
+        <h2>Weather</h2>
+        <div class="weather-content">
+          <div id="weather-main" class="weather-main">
+            <div id="weather-icon" class="weather-icon">☁</div>
+            <div>
+              <div id="temp" class="big-time">--°C</div>
+              <div id="conditions" class="small-text">Loading...</div>
+            </div>
+          </div>
+          <div class="weather-meta">
+            <div id="location" class="small-text">Location: Auto-detected</div>
+            <div id="feelslike" class="small-text">Feels like: --</div>
+          </div>
+          <form id="city-form" class="city-form">
+            <input type="text" id="city-input" placeholder="Enter city (e.g., Windhoek)" aria-label="Enter city for weather">
+            <button type="submit">Update</button>
+          </form>
+        </div>
+      </article>
+
+      <article class="card holidays-card">
+        <h2>Upcoming Holidays</h2>
+        <ul id="holidays-list" class="holidays-list">
+          <li>Loading holidays…</li>
+        </ul>
+      </article>
+
+      <article class="card countdown-card">
+        <h2>Weekend Countdown</h2>
+        <div id="countdown" class="countdown">Loading countdown…</div>
+        <small class="small-text">Next Saturday 00:00</small>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <small>Made with <span class="gold">♥</span> • By <span class="accent">Group 17</span> • (Treves & Rejoice)</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

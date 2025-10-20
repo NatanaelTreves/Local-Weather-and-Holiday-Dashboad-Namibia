@@ -1,0 +1,9 @@
+{
+  "name": "Local Weather & Holiday Dashboard",
+  "short_name": "Weather Dash",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f7f7",
+  "theme_color": "#00796b",
+  "icons": [{ "src": "icon.png", "sizes": "192x192", "type": "image/png" }]
+}
